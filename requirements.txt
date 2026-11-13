@@ -1,2 +1,5 @@
 pydantic
-fastapi uvicorn
+fastapi
+uvicorn
+google-genai
+python-dotenv

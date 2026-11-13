@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routes.game import router
+try:
+    from app.routes.game import router
+except ModuleNotFoundError:
+    from routes.game import router
 
 app = FastAPI()
 

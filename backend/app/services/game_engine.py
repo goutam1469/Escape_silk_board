@@ -1,5 +1,9 @@
 import uuid
-from models.state import GameState
+
+try:
+    from app.models.state import GameState
+except ModuleNotFoundError:
+    from models.state import GameState
 
 sessions = {}
 
